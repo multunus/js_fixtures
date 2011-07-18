@@ -1,6 +1,26 @@
 = js_fixtures
 
-Description goes here.
+A gem that allows controller specs to generate markup which can be used as 
+HTML fixtures within javascript tests written using Jasmine and JSTestDriver. 
+
+To use this follow these steps:
+
+1. Add the dependency for your gem in Gemfile:
+
+gem 'js_fixtures'
+
+2. Within the controller specs, call the method to create fixtures as follows:
+
+save_fixture(html_for('body'),'Signup')
+
+The above will save the content of the body in file Signup.js in the path 'spec/javascripts/helpers/'. The file will have a method loadSignupFixture which contains the HTML fixture.
+3. Call the same in the JS tests in beforeEach section:
+
+beforeEach(function () {
+    $(this).ready(function () {
+      loadSignupFixture()
+    });
+});
 
 == Contributing to js_fixtures
  
@@ -14,6 +34,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Leena. See LICENSE.txt for
+Copyright (c) 2011 Multunus. See LICENSE.txt for
 further details.
 
