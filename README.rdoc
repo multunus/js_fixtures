@@ -7,9 +7,9 @@ To use this follow these steps:
 
 * Add the dependency for your gem in Gemfile: 
 
-    ```ruby
-      gem 'js_fixtures'
-    ```
+
+    `gem 'js_fixtures'`
+
 
 * Within the controller specs, call the method to create fixtures as follows: 
 
