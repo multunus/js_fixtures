@@ -18,11 +18,12 @@ To use this follow these steps:
 The above will save the content of the body in file Signup.js in the path 'spec/javascripts/helpers/'. The file will have a method loadSignupFixture which contains the HTML fixture.
 * Call the same in the JS tests in beforeEach section:
 
-beforeEach(function () {
-    $(this).ready(function () {
-      loadSignupFixture()
+
+    beforeEach(function () {
+        $(this).ready(function () {
+          loadSignupFixture()
+        });
     });
-});
 
 == Contributing to js_fixtures
  
