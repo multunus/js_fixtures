@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{js_fixtures}
-  s.version = ""
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Leena"]
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "README",
     "README.rdoc",
     "Rakefile",
+    "VERSION",
     "js_fixtures.gemspec",
     "lib/js_fixtures.rb"
   ]
